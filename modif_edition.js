@@ -1,4 +1,4 @@
-#####éditer le edition.js ligne 429
+//éditer le edition.js ligne 429: https://github.com/3liz/lizmap-web-client/blob/248968a8007029f45902c297abf2b50c9c73f662/lizmap/www/js/edition.js
  
  
  // Creation
