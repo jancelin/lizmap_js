@@ -1,4 +1,5 @@
 lizMap.events.on({
+   //lizmapeditionformdisplayed: function(e) {
    uicreated: function(e) {
       
          $('#attribution-box').click(function(){
@@ -16,7 +17,8 @@ lizMap.events.on({
             var lonlatTransform = new OpenLayers.Geometry.Point(lon,lat).transform('EPSG:4326', 'EPSG:2154');
             var point2 = new OpenLayers.Geometry.Point(lonlatTransform.x, lonlatTransform.y);
             console.log(point2);
-            });  
+            var point_ft = new OpenLayers.Feature.Vector(point2, null, null);
+            console.log(point_ft);
           
                  
           });
