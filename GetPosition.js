@@ -35,15 +35,18 @@ lizMap.events.on({
                  new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
                  lizMap.map.getProjectionObject() // to Spherical Mercator Projection
                 );
-            var zoom=5;
+            var zoom=9;
             var markers = new OpenLayers.Layer.Markers( "Markers" );
             lizMap.map.addLayer(markers);
             markers.addMarker(new OpenLayers.Marker(lonLat));
     
             lizMap.map.setCenter (lonLat, zoom);
+               
+            var pointF = new OpenLayers.Feature.Vector(lonLat)    
             
-            //editionLayer['ol'].addFeatures([lonLat]);
-            
+            //console.log(lizMap.map.getLayersByClass("OpenLayers.Layer.Vector") )
+            lizMap.editionLayer['ol'].addFeatures([pointF]);
+               
             console.log('?????');
             });  
                  
