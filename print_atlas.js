@@ -9,7 +9,9 @@ lizMap.events.on({
       w.print();
       }
       
-    $('#attribution-box').click(nWin);
+    lizMap.addDock('icon-print');
+      
+    $('#button-icon-print').click(nWin);
 
   }
 
